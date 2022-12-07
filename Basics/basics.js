@@ -153,5 +153,30 @@ function say() {
     console.log(message);
 }
 
-say()
+say() // return hi
+console.log(message); // return hello
+
+//Non-strict mode
+function greetings() {
+    message = 'hi'; // variable is not declared hence js engine will create and adds this new var in the global scope.
+    console.log(message);
+}
+
+greetings() // return hi
+console.log(message); // return hi
+
+//strict mode
+/* to avoid creating a global variable accidentally inside a function
+   because of omitting a var keyword, add "use strict"; in your code
+   at the beggining of your js file to eliminate silent errors
+*/
+
+"use strict";
+
+function greetings() {
+    message = 'hi' // reference error
+    console.log(message);
+}
+
+greetings();
 console.log(message);
