@@ -130,3 +130,28 @@ while
 with
 yield
 */
+
+//global and local variables
+var myName = 'Allan';
+
+function say() {
+    var message = 'hello!'; //variable declred within the scope, 'local variable'
+    console.log(message); //accessing variable withinin the function scope
+    console.log(message + ' ' + myName); //myName is a global var and can be accessed anywhere
+}
+
+say();
+console.log(myName); // myName is a global var, hence can be accessed anywhere in the code.
+console.log(message); // reference error since the var was declared inside a function.
+
+//variable shadowing
+
+var message = 'hello'; //global var
+
+function say() {
+    var message = 'hi'; //local var, shadowing our global var because of sharing the same var name
+    console.log(message);
+}
+
+say()
+console.log(message);
