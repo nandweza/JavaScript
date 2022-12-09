@@ -1,14 +1,14 @@
 //variables
 var a; //var keyword lets us declare a variable and access it anywhere in the code.
 let b; //let keyword lets us declare a variable and use it only in the scope it was declared.
-const x = 10; // declared a variable which is unchangeable throughout the code and it has to be initialized.
+const x = 10; // declare a variable which is unchangeable throughout the code and it has to be initialized.
 
 a = 3;
 b = 7;
 console.log(a + b);
 
-a = 6; //assigning a with a different value
-b = 5; //assigning b with a different value
+a = 6; //assigning 'a' with a different value
+b = 5; //assigning 'b' with a different value
 console.log(a + b);
 
 x = 3 //assigning a constant with another value.
