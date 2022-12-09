@@ -180,3 +180,11 @@ function greetings() {
 
 greetings();
 console.log(message);
+
+//objects; collection of properties, where each property is defined as a key-value pair.
+let person = {
+    firstname: "Nandweza",
+    lastname: "Allan"
+}
+
+console.log(person.firstname); //accessing the property using (.) notation
